@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Dengan Tailwind CSS</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/output.css" />
   </head>
   <body>
@@ -58,7 +60,7 @@
             <h1 class="text-base font-semibold text-primary md:text-xl">Halo semua👋, saya<span class="block font-bold text-dark text-4xl mt-1 lg:text-4xl">Muhammad Randu Diva</span>
             </h1>
             <h2 class="font-medium text-dark text-lg mb-5 lg:text-2xl">Student & Network Engineer</h2>
-            <p class="font-medium text-dark mb-10 leading-relaxed"> Membuat web programming itu seasyik routing jaringan!</p>
+            <p class="font-medium text-fuchsia-700  mb-10 leading-relaxed"> Web programming itu tidak kalah asyik dari routing jaringan!</p>
             <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi Saya</a>
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
@@ -127,7 +129,7 @@
         <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2 text-blue-50">
           <!-- Sekolah Dasar(SD) -->
           <div class="flex md:contents">
-            <div class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md" data-aos="fade-up-right">
+            <div class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md" data-aos="fade-right" data-aos-duration="1000">
               <h3 class="font-semibold text-lg mb-1"> SD Negeri Tegalrejo 1 </h3>
               <p class="leading-tight text-justify"> 2007-2013 </p>
             </div>
@@ -146,14 +148,14 @@
               </div>
               <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
             </div>
-            <div class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+            <div class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
               <h3 class="font-semibold text-lg mb-1"> SMP-T Darul Hikmah </h3>
               <p class="leading-tight text-justify"> 2014-2015 </p>
             </div>
           </div>
           <!-- Sekolah Menengah Pertama(SMP) -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
+            <div class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
               <h3 class="font-semibold text-lg mb-1"> SMP Negeri 2 Gamping </h3>
               <p class="leading-tight text-justify"> 2015-2017 </p>
             </div>
@@ -172,17 +174,17 @@
               </div>
               <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
             </div>
-            <div class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+            <div class="bg-blue-500 col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
               <h3 class="font-semibold text-lg"> SMK Negeri 1 Seyegan </h3>
-              <h4 class="font-semibold text-lg mb-1"> Teknik Komputer & Jaringan </h4>
+              <h4 class="font-semibold text-xs mb-1"> Teknik Komputer & Jaringan </h4>
               <p class="leading-tight text-justify"> 2017-2020 </p>
             </div>
           </div>
           <!-- Universitas -->
           <div class="flex flex-row-reverse md:contents">
-            <div class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md">
-              <h3 class="font-semibold text-lg mb-1"> Universitas Jenderal Achmad Yani Yogyakarta </h3>
-              <h4 class="font-semibold text-lg mb-1"> S-1 Sistem Infomasi </h4>
+            <div class="bg-blue-500 col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+              <h3 class="font-semibold text-lg mb-1"> Universitas Jenderal Achmad Yani</h3>
+              <h4 class="font-semibold text-xs mb-1"> S-1 Sistem Infomasi </h4>
               <p class="leading-tight text-justify"> 2021-2025 </p>
             </div>
             <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
@@ -206,6 +208,63 @@
             <h2 class="font-bold text-dark text-3xl mb-4">Meningkatkan Keahlian dengan Sertifikasi</h2>
             <p class="font-medium text-md text-secondary">Saya telah berhasil mendapatkan berbagai sertifikasi yang memperkuat keterampilan dan pengetahuan saya di bidang teknologi.</p>
           </div>
+        </div>
+        <div class="swiper mySwiper p-16">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" class="w-full" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" class="w-full" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+        <!-- Swiper JS -->
+        
+      
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            },
+            pagination: {
+              el: ".swiper-pagination",
+            },
+          });
+        </script>
+      </div>
     </section>
     <!-- Certification Section End -->
 
@@ -220,26 +279,26 @@
           </div>
         </div>
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000">
             <div class="rounded-md shadow-md overflow-hidden w-full h-64 object-cover">
               <img src="dist/img/portfolio/portfolio-1.png" alt="project1">
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web Cek Resi - RESIKU</h3>
-            <p class="font-medium text-base text-secondary">Saya membuat project ini sebagai syarat kelulusan tugas besar mata kuliah Pengembangan Aplikasi Web yang diampu oleh <a href="https://www.linkedin.com/in/sunupf/" target="_blank" class="text-primary">Sunu Pinasthika Fajar</a></p>
+            <p class="font-medium text-base text-secondary text-justify">Saya membuat project ini menggunakan html, css, javascript, dan bootstrap 5 yang dipadukan dengan API tracking pengiriman paket berbasis nomor resi yang digunakan untuk memantau lokasi paket secara terkini dengan ui yang menarik. Project ini digunakan sebagai syarat kelulusan tugas besar mata kuliah Pengembangan Aplikasi Web yang diampu oleh <a href="https://www.linkedin.com/in/sunupf/" target="_blank" class="text-primary">Sunu Pinasthika Fajar S.Kom., M.Cs.</a></p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
             <div class="rounded-md shadow-md overflow-hidden w-full h-64 object-cover">
               <img src="dist/img/portfolio/portfolio-2.png" alt="project2">
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web Pembayaran SPP - PORDIK UNJAYA</h3>
-            <p class="font-medium text-base text-secondary">Saya membuat project ini sebagai syarat kelulusan tugas besar mata kuliah Pengembangan Aplikasi Web Lanjut yang diampu oleh <a href="https://www.linkedin.com/in/kharisma-anoe/" target="_blank" class="text-primary">Kharisma, S.T., M.Cs.</a></p>
+            <p class="font-medium text-base text-secondary text-justify">Saya membuat project ini menggunakan html, css, javascript, dan flask python sebagai micro framework yang juga menggunakan database MYSQL sebagai penyimpanan data transaksi yang digunakan untuk melakukan transaksi SPP mahasiswa sehingga admin keuangan dapat lebih mudah dalam mengelola keuangan kampus dan mahasiswa dapat mengetahui tagihan akademiknya. Project ini digunakan sebagai syarat kelulusan tugas besar mata kuliah Pengembangan Aplikasi Web Lanjut yang diampu oleh <a href="https://www.linkedin.com/in/kharisma-anoe/" target="_blank" class="text-primary">Kharisma, S.T., M.Cs.</a></p>
           </div>
-          <div class="mb-12 p-4 md:w-1/2">
+          <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
             <div class="rounded-md shadow-md overflow-hidden w-full h-64 object-cover">
               <img src="dist/img/portfolio/portfolio-3.png" alt="project3">
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web Portfolio Tailwind</h3>
-            <p class="font-medium text-base text-secondary">Saya membuat portfolio berbasis tailwind ini sebagai tanda saya sudah mempelajari penggunaan framework Tailwind CSS.</p>
+            <p class="font-medium text-base text-secondary text-justify">Saya membuat portfolio ini menggunakan html, css, javascript yang mana css nya berbasis Tailwind, sehingga framework css ini akan lebih memudahkan front end developer sehingga proses coding akan lebih cepat dan mudah. Saya membuat porfolio ini sebagai tanda saya sudah mempelajari penggunaan framework Tailwind CSS.</p>
           </div>
         </div>
       </div>
@@ -351,11 +410,10 @@
       </div>
     </footer>
     <!-- Footer End -->
-  <script>
-    import AOS from 'aos';
-    import 'node_modules/aos/dist/aos.css';
-    AOS.init({duration: 800,});
-  </script>
-  <script src="dist/js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="dist/js/script.js"></script>
+    <script>AOS.init();</script>
   </body>
 </html>
