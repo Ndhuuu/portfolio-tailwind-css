@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="dist/output.css" />
+    <style>
+      swiper-container {
+        width: 1300px;
+        height: 500px;
+      }
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <!-- Header Start -->
@@ -209,62 +229,19 @@
             <p class="font-medium text-md text-secondary">Saya telah berhasil mendapatkan berbagai sertifikasi yang memperkuat keterampilan dan pengetahuan saya di bidang teknologi.</p>
           </div>
         </div>
-        <div class="swiper mySwiper p-16">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-5.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-6.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-7.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-8.jpg" class="w-full" />
-            </div>
-            <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-9.jpg" class="w-full" />
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
+        <div>
+          <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" slides-per-view="3" space-between="30" free-mode="true">
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+          <swiper-slide><img src="dist/img/certificate/certificate-1.png" alt="sertifikasi-1" class="object-cover"></swiper-slide>
+        </swiper-container>
         </div>
-      
-        <!-- Swiper JS -->
-        
-      
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".mySwiper", {
-            effect: "coverflow",
-            grabCursor: true,
-            centeredSlides: true,
-            slidesPerView: "auto",
-            coverflowEffect: {
-              rotate: 50,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true,
-            },
-            pagination: {
-              el: ".swiper-pagination",
-            },
-          });
-        </script>
-      </div>
     </section>
     <!-- Certification Section End -->
 
@@ -280,22 +257,22 @@
         </div>
         <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
           <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000">
-            <div class="rounded-md shadow-md overflow-hidden w-full h-64 object-cover">
-              <img src="dist/img/portfolio/portfolio-1.png" alt="project1">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/img/portfolio/portfolio-1.png" alt="portfolio-1" class="w-full object-cover">
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web Cek Resi - RESIKU</h3>
-            <p class="font-medium text-base text-secondary text-justify">Saya membuat project ini menggunakan html, css, javascript, dan bootstrap 5 yang dipadukan dengan API tracking pengiriman paket berbasis nomor resi yang digunakan untuk memantau lokasi paket secara terkini dengan ui yang menarik. Project ini digunakan sebagai syarat kelulusan tugas besar mata kuliah Pengembangan Aplikasi Web yang diampu oleh <a href="https://www.linkedin.com/in/sunupf/" target="_blank" class="text-primary">Sunu Pinasthika Fajar S.Kom., M.Cs.</a></p>
+            <p class="font-medium text-base text-secondary text-justify">Saya membuat project ini menggunakan bootstrap 5 yang dipadukan dengan API tracking pengiriman paket berbasis nomor resi yang digunakan untuk memantau lokasi paket secara terkini dengan ui yang menarik. Project ini diampu oleh <a href="https://www.linkedin.com/in/sunupf/" target="_blank" class="text-primary">Sunu Pinasthika Fajar S.Kom., M.Cs.</a></p>
           </div>
           <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-            <div class="rounded-md shadow-md overflow-hidden w-full h-64 object-cover">
-              <img src="dist/img/portfolio/portfolio-2.png" alt="project2">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/img/portfolio/portfolio-2.png" alt="portfolio-2" class="w-full object-cover">
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web Pembayaran SPP - PORDIK UNJAYA</h3>
-            <p class="font-medium text-base text-secondary text-justify">Saya membuat project ini menggunakan html, css, javascript, dan flask python sebagai micro framework yang juga menggunakan database MYSQL sebagai penyimpanan data transaksi yang digunakan untuk melakukan transaksi SPP mahasiswa sehingga admin keuangan dapat lebih mudah dalam mengelola keuangan kampus dan mahasiswa dapat mengetahui tagihan akademiknya. Project ini digunakan sebagai syarat kelulusan tugas besar mata kuliah Pengembangan Aplikasi Web Lanjut yang diampu oleh <a href="https://www.linkedin.com/in/kharisma-anoe/" target="_blank" class="text-primary">Kharisma, S.T., M.Cs.</a></p>
+            <p class="font-medium text-base text-secondary text-justify">Saya membuat project ini menggunakan flask python sebagai micro framework yang juga menggunakan database MySQL sebagai penyimpanan data transaksi yang digunakan untuk melihat dan memverifikasi SPP mahasiswa. Project ini diampu oleh <a href="https://www.linkedin.com/in/kharisma-anoe/" target="_blank" class="text-primary">Kharisma, S.T., M.Cs.</a></p>
           </div>
           <div class="mb-12 p-4 md:w-1/2" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
-            <div class="rounded-md shadow-md overflow-hidden w-full h-64 object-cover">
-              <img src="dist/img/portfolio/portfolio-3.png" alt="project3">
+            <div class="rounded-md shadow-md overflow-hidden">
+              <img src="dist/img/portfolio/portfolio-3.png" alt="portfolio-3" class="w-full object-cover">
             </div>
             <h3 class="font-semibold text-xl text-dark mt-5 mb-3">Web Portfolio Tailwind</h3>
             <p class="font-medium text-base text-secondary text-justify">Saya membuat portfolio ini menggunakan html, css, javascript yang mana css nya berbasis Tailwind, sehingga framework css ini akan lebih memudahkan front end developer sehingga proses coding akan lebih cepat dan mudah. Saya membuat porfolio ini sebagai tanda saya sudah mempelajari penggunaan framework Tailwind CSS.</p>
@@ -412,7 +389,7 @@
     <!-- Footer End -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <script src="dist/js/script.js"></script>
     <script>AOS.init();</script>
   </body>
